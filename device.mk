@@ -70,20 +70,7 @@ PRODUCT_USE_SCUDO := true
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.common-util.vendor \
-    android.hardware.audio.common@5.0.vendor \
-    android.hardware.audio.common@6.0.vendor \
-    android.hardware.audio.common@6.0-util.vendor \
-    android.hardware.audio.common@7.0.vendor \
-    android.hardware.audio.common@7.0-util.vendor \
-    android.hardware.audio@6.0.vendor \
-    android.hardware.audio@6.0-util.vendor \
-    android.hardware.audio@7.0-util.vendor \
-    android.hardware.audio@7.0.vendor \
-    android.hardware.soundtrigger@2.3-impl:32 \
     audio.bluetooth.default \
-    libaudiofoundation.vendor \
     libbluetooth_audio_session \
     libalsautils \
     libnbaio_mono \
@@ -119,51 +106,20 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.common@1.0.vendor:64 \
-    android.hardware.camera.device@3.2.vendor:64 \
-    android.hardware.camera.device@1.0.vendor:64 \
-    android.hardware.camera.device@3.3.vendor:64 \
-    android.hardware.camera.device@3.4.vendor:64 \
-    android.hardware.camera.device@3.5.vendor:64 \
-    android.hardware.camera.device@3.6.vendor:64 \
-    android.hardware.camera.provider@2.4.vendor:64 \
-    android.hardware.camera.provider@2.5.vendor:64 \
-    android.hardware.camera.provider@2.6.vendor:64 \
-    libcamera2ndk_vendor \
-    libexif.vendor \
-    libexpat.vendor \
-    libpng.vendor
+    libcamera2ndk_vendor
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0.vendor:64 \
-    android.hardware.graphics.allocator@3.0.vendor:64 \
-    android.hardware.graphics.allocator@4.0.vendor:64 \
-    android.hardware.graphics.composer@2.1-resources.vendor:64 \
-    android.hardware.graphics.composer@2.2-resources.vendor:64 \
     android.hardware.graphics.composer@2.3-service \
-    android.hidl.allocator@1.0.vendor:64 \
     android.hardware.memtrack-service.mediatek-mali \
-    android.hardware.graphics.common-V2-ndk.vendor \
-    disable_configstore \
-    vndservicemanager \
-    libion.vendor \
-    libui.vendor
+    disable_configstore
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.0.vendor:64 \
-    android.hardware.drm@1.1.vendor:64 \
-    android.hardware.drm@1.2.vendor:64 \
-    android.hardware.drm@1.3.vendor:64 \
-    android.hardware.drm@1.4.vendor:64 \
-    libmockdrmcryptoplugin \
-    libdrm.vendor \
-    libdrm
+    android.hardware.drm-service.clearkey
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -180,8 +136,7 @@ PRODUCT_COPY_FILES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
-    android.hardware.gatekeeper@1.0-impl \
-    libgatekeeper.vendor
+    android.hardware.gatekeeper@1.0-impl
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -226,20 +181,10 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-   android.hardware.keymaster@3.0.vendor \
-   android.hardware.keymaster@4.0.vendor \
-   android.hardware.keymaster@4.1.vendor \
-   libkeymaster4.vendor:64 \
    libkeymaster4support.vendor:64 \
-   libkeymaster4_1support.vendor:64 \
-   libkeymaster41.vendor:64 \
-   libkeymaster_messages.vendor:64 \
-   libkeymaster_portable.vendor:64 \
-   libpuresoftkeymasterdevice.vendor:64 \
    libsoft_attestation_cert.vendor:64 \
    libkeystore-wifi-hidl \
-   libkeystore-engine-wifi-hidl \
-   libnetutils.vendor
+   libkeystore-engine-wifi-hidl
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -272,7 +217,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
     android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
-    SecureElement \
     Tag
 
 PRODUCT_COPY_FILES += \
@@ -403,14 +347,12 @@ PRODUCT_PACKAGES += \
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.3-impl \
-    android.hardware.soundtrigger@2.0-impl \
-    android.hardware.soundtrigger@2.3.vendor
+    android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-xhotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xhotword.xml \
-    $(LOCAL_PATH)/configs/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-xhotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xhotword.xml \
+    $(DEVICE_PATH)/configs/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -422,12 +364,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
-
-# Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0.vendor:64 \
-    android.hardware.secure_element@1.1.vendor:64 \
-    android.hardware.secure_element@1.2.vendor:64
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
