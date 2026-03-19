@@ -463,6 +463,8 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
 
+$(call soong_config_set_bool,android_hardware_mediatek_usb,audio_accessory_supported,true)
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.op6893
