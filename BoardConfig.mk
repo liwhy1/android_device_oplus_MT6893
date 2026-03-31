@@ -148,7 +148,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
 # SPL
-VENDOR_SECURITY_PATCH := 2023-03-05
+VENDOR_SECURITY_PATCH := 2025-07-05
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
