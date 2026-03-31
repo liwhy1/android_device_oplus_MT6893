@@ -1,4 +1,4 @@
-# Unpinned common blobs from RMX3031_11.F.12 (sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1677828988354 release-keys)
+# Unpinned common blobs from DN2101_11_A.01_250711 13-TP1A.220905.001-1752218447404-release-keys
 
 # AAL
 vendor/lib/libaal_cust.so
