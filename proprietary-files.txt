@@ -2002,7 +2002,6 @@ vendor/lib64/vendor.trustonic.tee@1.1.so
 vendor/bin/thermal
 vendor/bin/thermal_core
 vendor/bin/thermal_intf
-vendor/bin/thermal_manager
 vendor/bin/thermalloadalgod
 vendor/etc/.tp/.ht120.mtc
 vendor/etc/.tp/.thermal_policy_08
@@ -2010,7 +2009,6 @@ vendor/etc/.tp/thermal.conf
 vendor/etc/.tp/thermal.off.conf
 vendor/etc/init/init.thermal.rc
 vendor/etc/init/init.thermal_core.rc
-vendor/etc/init/init.thermal_manager.rc
 vendor/etc/init/init.thermalloadalgod.rc
 vendor/etc/fstb.cfg
 vendor/lib/libthermalalgo.so
