@@ -2015,6 +2015,10 @@ vendor/etc/init/init.thermalloadalgod.rc
 vendor/etc/fstb.cfg
 vendor/lib/libthermalalgo.so
 
+# Thermal-Hardware
+vendor/lib/hw/thermal_hal.so
+vendor/lib64/hw/thermal_hal.so
+
 # Vndk
 system/lib64/libbinder.so:vendor/lib64/libbinder-v32.so;FIX_SONAME
 
