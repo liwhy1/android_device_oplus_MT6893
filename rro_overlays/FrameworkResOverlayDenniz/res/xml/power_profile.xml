@@ -213,10 +213,10 @@
       <value>400</value>  <!-- ~200mA -->
   </array>
 
-  <item name="cpu.awake">8</item>
+  <item name="cpu.idle">8</item>
   <!-- Additional power consumption by CPU excluding cluster and core when  running -->
   <!-- Current when CPU is idle -->
-  <item name="cpu.idle">6.5</item>
+  <item name="cpu.suspend">6.5</item>
 
   <!-- Memory bandwidth power values in mA at the rail. There must be one value
        for each bucket defined in the device tree. -->
