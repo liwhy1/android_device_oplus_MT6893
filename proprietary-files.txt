@@ -1851,7 +1851,6 @@ vendor/bin/md_monitor_ctrl
 vendor/bin/mnld
 vendor/bin/mrdump_tool
 vendor/bin/muxreport
-vendor/bin/rttv
 vendor/etc/apdb/APDB_MT6885_S01__W2238
 vendor/etc/armnn_app.config
 vendor/etc/ecc_list.xml
