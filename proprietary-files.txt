@@ -777,9 +777,11 @@ odm/lib64/libCamera_imx766mipiraw20817_zHDR_Face_Capture.so
 odm/lib64/libCamera_imx766mipiraw20817_zHDR_Scene_Capture.so
 odm/lib64/libDeVIS.so
 odm/lib64/libEIS.so
+odm/lib64/libFilterWrapper.so
 odm/lib64/libOGLManager.so;DISABLE_CHECKELF
 odm/lib64/libRbsFlow.so
 odm/lib64/libRbsFlow_cap.so
+odm/lib64/libSuperTextWrapper.so
 odm/lib64/libVideoEnhance.so
 odm/lib64/libWaterMark.so
 odm/lib64/lib_rectify.so
