@@ -1512,7 +1512,7 @@ vendor/bin/replayevent
 vendor/bin/vpud
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/init/vpud.rc
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
+vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml:vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
 vendor/etc/mpe.conf
 vendor/lib/AV1SecureVdecCA.so
 vendor/lib/AVCSecureVdecCA.so
