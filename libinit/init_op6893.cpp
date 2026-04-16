@@ -47,6 +47,7 @@ void property_override(const char* prop, const char* value, bool add = true) {
 
 void set_ro_build_prop(const string& prop, const string& value, bool product = true) {
     string prop_name;
+
     for (const auto& source : ro_props_default_source_order) {
         if (product)
             prop_name = "ro.product." + source + prop;
@@ -59,59 +60,94 @@ void set_ro_build_prop(const string& prop, const string& value, bool product = t
 
 void vendor_load_properties() {
     const char* prj_file = "/proc/oplusVersion/prjName";
+
     string prj_name;
     string device;
     string model;
+    string name;
+    string brand;
+    string manufacturer;
     string fingerprint;
 
     if (ReadFileToString(prj_file, &prj_name)) {
         prj_name = Trim(prj_name);
 
+        // Realme X7 Max 5G
         if (prj_name == "20662") {
             device = "cupida";
-            model = "Realme X7 Max 5G";
-            fingerprint = "realme/RMX3031/RMX3031L1:13/TP1A.220905.001/R.ead5d5-5fba:user/release-keys";
+            model = "RMX3031";
+            name = "RMX3031";
+            brand = "realme";
+            manufacturer = "realme";
+
+            fingerprint =
+                "realme/RMX3031/RMX3031L1:13/TP1A.220905.001/R.ead5d5-5fba:user/release-keys";
         }
+
+        // OnePlus Nord 2 5G
         else if (prj_name == "20827" || prj_name == "20831") {
             device = "denniz";
-            model = "OnePlus Nord 2 5G";
-            fingerprint = "OnePlus/DN2103EEA/OP515BL1:13/TP1A.220905.001/R.108b2c1-1:user/release-keys";
+
+            if (prj_name == "20831") {
+                model = "DN2101";
+                name = "DN2101";
+            } else {
+                model = "DN2103";
+                name = "DN2103";
+            }
+
+            brand = "OnePlus";
+            manufacturer = "OnePlus";
+
+            fingerprint =
+                "OnePlus/DN2103EEA/OP515BL1:13/TP1A.220905.001/R.108b2c1-1:user/release-keys";
         }
+
+        // Unknown fallback
         else {
             device = "op6893";
             model = "op6893";
-            fingerprint = "lineage/lineage_op6893/op6893:13/TP1A.220905.001/eng.user.20230710.184518:userdebug/test-keys";
+            name = "op6893";
+            brand = "Android";
+            manufacturer = "Android";
+
+            fingerprint =
+                "lineage/lineage_op6893/op6893:13/TP1A.220905.001/eng.user.20230710.184518:userdebug/test-keys";
+
             LOG(WARNING) << "Unknown prjName: " << prj_name;
         }
-    }
-    else {
+    } else {
         LOG(ERROR) << "Unable to read prjName from " << prj_file;
         return;
     }
 
-    // Apply build fingerprint globally
+    // Apply fingerprint globally
     if (!fingerprint.empty()) {
         property_override("ro.build.fingerprint", fingerprint.c_str());
+
         for (const auto& source : ro_props_default_source_order) {
             string prop = "ro." + source + "build.fingerprint";
             property_override(prop.c_str(), fingerprint.c_str());
         }
     }
 
-    // Set device and model props
+    // Product props
     set_ro_build_prop("device", device);
     set_ro_build_prop("model", model);
-    set_ro_build_prop("name", model);
-    set_ro_build_prop("product", model, false);
+    set_ro_build_prop("name", name);
+    set_ro_build_prop("brand", brand);
+    set_ro_build_prop("manufacturer", manufacturer);
 
-    // Optional: global ro.device override
+    // ro.build.product
+    set_ro_build_prop("product", name, false);
+
+    // Optional vendor props
     property_override("ro.vendor.device", device.c_str());
-	
-    // Set gamma conversion prop
-    if (device == "denniz") {
+    property_override("ro.vendor.product.device", device.c_str());
+
+    // Brightness gamma conversion
+    if (device == "denniz")
         property_override("sys.brightness.disable_gamma_conversion", "0");
-    }
-    else {
+    else
         property_override("sys.brightness.disable_gamma_conversion", "1");
-    }
 }
