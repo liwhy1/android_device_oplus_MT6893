@@ -373,7 +373,7 @@ vendor/lib64/libbt-vendor.so
 # Camera - lib3a - from RMX3031_11.C.14
 vendor/lib64/lib3a.af.core.so|0d3c747b1bb8a85289aae1226f9da70927103486
 
-# Camera - from RMX3031_11_EX.01_231120
+# Camera - from RMX3031_11_EX.01 oplus/ossi/ossi:12/SP1A.210812.016/1700486087203:user/release-keys
 odm/lib64/hi846_mipi_raw_20615_tuning.so|93b1255af701b6a08dec3c1f1de6b1031267d256
 odm/lib64/imx471_mipi_raw_20615_tuning.so|c5f872ae6985e87f3902480b1e39eca3498ba862
 odm/lib64/imx682_mipi_raw_20615_tuning.so|f2c1eb15ed74f20b9a3564f927199e46bb3aa999
@@ -1318,7 +1318,7 @@ vendor/firmware/novatek_ts_fw_tm.bin
 vendor/firmware/remoteproc_scp
 vendor/firmware/soc3_0_patch_wmmcu_1a_1_hdr.bin
 
-# Firmware ( tfa98xx )
+# Firmware ( tfa98xx ) - from from RMX3031_11_EX.01 oplus/ossi/ossi:12/SP1A.210812.016/1700486087203:user/release-keys
 odm/etc/audio/smartpa_param/tfa98xx.cnt
 odm/etc/audio/smartpa_param/tfa98xx_music.bin
 odm/etc/audio/smartpa_param/tfa98xx_ringtone.bin
