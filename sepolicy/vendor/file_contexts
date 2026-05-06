@@ -23,9 +23,6 @@
 # Vibrator
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service.op6893                               u:object_r:hal_vibrator_default_exec:s0
 
-# Nfc
-/dev/nq-nci                                                                                             u:object_r:nfc_device:s0
-
 # Sensors
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service                              u:object_r:hal_sensors_default_exec:s0
 /dev/m_virtual_sensor_misc                                                                              u:object_r:virtual_sensor_device:s0
