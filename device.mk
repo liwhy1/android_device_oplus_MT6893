@@ -131,7 +131,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V2-ndk.vendor \
     android.hardware.graphics.composer@2.3-service \
-    android.hardware.memtrack-service.mediatek-mali \
+    android.hardware.memtrack-service.mediatek \
     disable_configstore \
     vndservicemanager
 
