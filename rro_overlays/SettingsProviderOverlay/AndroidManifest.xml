@@ -1,8 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.settingsprovidersoverlay.op6893">
-
-    <application android:hasCode="false" />
+          package="com.android.settingsprovidersoverlay.op6893">
     <overlay android:targetPackage="com.android.providers.settings"
              android:isStatic="true"
-             android:priority="50"/>
+             android:priority="50" />
 </manifest>

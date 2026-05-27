@@ -1,6 +1,9 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
 runtime_resource_overlay {
     name: "LineageSettingsProviderOverlay",
-    sdk_version: "current",
-    resource_dirs: ["res"],
-    vendor: true
+    vendor: true,
 }

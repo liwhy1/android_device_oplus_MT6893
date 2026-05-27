@@ -4,8 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-
     <!-- Default for LineageSettings.Secure.VOLUME_PANEL_ON_LEFT -->
     <bool name="def_volume_panel_on_left">true</bool>
-
 </resources>
