@@ -5,49 +5,49 @@
 //
 
 cc_prebuilt_library_shared {
-	name: "libcrypto-v32",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["libcrypto-v32.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	vendor: true,
+    name: "libcrypto-v32",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["libcrypto-v32.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    vendor: true,
 }
 
 cc_prebuilt_library_shared {
-	name: "libssl-v32",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["libssl-v32.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	vendor: true,
+    name: "libssl-v32",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["libssl-v32.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    vendor: true,
 }
 
 cc_prebuilt_library_shared {
-        name: "libtinyalsa-v32",
-        strip: {
-                none: true,
+    name: "libtinyalsa-v32",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["arm/libtinyalsa-v32.so"],
         },
-        target: {
-                android_arm: {
-                        srcs: ["arm/libtinyalsa-v32.so"],
-                },
-                android_arm64: {
-                        srcs: ["arm64/libtinyalsa-v32.so"],
-                },
+        android_arm64: {
+            srcs: ["arm64/libtinyalsa-v32.so"],
         },
-        compile_multilib: "both",
-        check_elf_files: false,
-        vendor: true,
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    vendor: true,
 }

@@ -7,8 +7,8 @@
 cc_library_shared {
     name: "libshim_ui",
     shared_libs: [
+        "libsync",
         "libui",
-	"libsync",
         "libutils",
     ],
     srcs: [

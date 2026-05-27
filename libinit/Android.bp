@@ -11,8 +11,8 @@ cc_library_static {
     ],
     srcs: ["init_op6893.cpp"],
     include_dirs: [
-        "system/core/init"
-    ]
+        "system/core/init",
+    ],
 }
 
 cc_binary {
