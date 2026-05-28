@@ -168,103 +168,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "GPUMinFreq",
-      "Path": "/sys/kernel/gpu/gpu_min_clock",
-      "Values": [
-        "886000",
-        "879000",
-        "873000",
-        "867000",
-        "861000",
-        "854000",
-        "848000",
-        "842000",
-        "836000",
-        "825000",
-        "815000",
-        "805000",
-        "795000",
-        "785000",
-        "775000",
-        "765000",
-        "755000",
-        "745000",
-        "735000",
-        "725000",
-        "715000",
-        "705000",
-        "695000",
-        "685000",
-        "675000",
-        "654000",
-        "634000",
-        "614000",
-        "593000",
-        "573000",
-        "553000",
-        "532000",
-        "512000",
-        "492000",
-        "471000",
-        "451000",
-        "431000",
-        "410000",
-        "390000",
-        "370000",
-        "350000"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "GPUMaxFreq",
-      "Path": "/sys/kernel/gpu/gpu_max_clock",
-      "Values": [
-        "886000",
-        "879000",
-        "873000",
-        "867000",
-        "861000",
-        "854000",
-        "848000",
-        "842000",
-        "836000",
-        "825000",
-        "815000",
-        "805000",
-        "795000",
-        "785000",
-        "775000",
-        "765000",
-        "755000",
-        "745000",
-        "735000",
-        "725000",
-        "715000",
-        "705000",
-        "695000",
-        "685000",
-        "675000",
-        "654000",
-        "634000",
-        "614000",
-        "593000",
-        "573000",
-        "553000",
-        "532000",
-        "512000",
-        "492000",
-        "471000",
-        "451000",
-        "431000",
-        "410000",
-        "390000",
-        "370000",
-        "350000"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
       "Name": "GPUSchedMode",
       "Path": "/sys/devices/platform/13000000.mali/js_ctx_scheduling_mode",
       "Values": [
@@ -526,18 +429,6 @@
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "GPUMinFreq",
-      "Duration": 0,
-      "Value": "854000"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "886000"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUSchedPeriod",
       "Duration": 0,
       "Value": "100"
@@ -579,12 +470,6 @@
       "Value": "1108000"
     },
     {
-      "PowerHint": "Flipendo",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "705000"
-    },
-    {
       "PowerHint": "DEVICE_IDLE",
       "Node": "TAUclampMin",
       "Duration": 0,
@@ -610,12 +495,6 @@
     },
     {
       "PowerHint": "DEVICE_IDLE",
-      "Node": "GPUMinFreq",
-      "Duration": 0,
-      "Value": "350000"
-    },
-    {
-      "PowerHint": "DEVICE_IDLE",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 0,
       "Value": "2000000"
@@ -632,11 +511,5 @@
       "Duration": 0,
       "Value": "921000"
     },
-    {
-      "PowerHint": "DEVICE_IDLE",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "614000"
-    }
   ]
 }
