@@ -147,7 +147,6 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 $(call soong_config_set_bool,surfaceflinger,has_mtk_udfps,true)
-$(call soong_config_set,surfaceflinger,mtk_dim_layer,NTFingerprintDimLayer)
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus

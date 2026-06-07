@@ -10,9 +10,6 @@
     <!-- Whether to enable MediaTek-specific optical dimming for UDFPS -->
     <bool name="config_udfpsMtkGhbmDimming">true</bool>
 
-    <!-- Name of the UDFPS HBM DimLayer for the HWComposer -->
-    <string name="config_udfpsHbmDimLayer" translatable="false">NTFingerprintDimLayer</string>
-
     <!-- Doze: does the double tap sensor need a proximity check? -->
     <bool name="doze_double_tap_proximity_check">true</bool>
 
