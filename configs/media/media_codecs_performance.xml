@@ -134,21 +134,6 @@ Only the three quirks included above are recognized at this point:
             <Limit name="measured-frame-rate-1280x720" range="186-409" />
             <Limit name="measured-frame-rate-1920x1080" range="113-248" />
         </MediaCodec>
-         <MediaCodec name="c2.mtk.hevc.decoder" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-352x288" range="131-288" />
-            <!-- #ifndef OPLUS_BUG_COMPATIBILITY-->
-            <!-- Jingcheng.Li@MULTMEDIASERVER.PLAYER.2726993, 2021/12/07, Modify for CTS test-->
-            <!--
-            <Limit name="measured-frame-rate-640x360" range="285-626" />
-            <Limit name="measured-frame-rate-720x480" range="145-155" />
-            -->
-            <!-- #else OPLUS_BUG_COMPATIBILITY-->
-            <Limit name="measured-frame-rate-640x360" range="285-626" />
-            <Limit name="measured-frame-rate-720x480" range="351-772" />
-            <!-- #endif OPLUS_BUG_COMPATIBILITY-->
-            <Limit name="measured-frame-rate-1280x720" range="206-454" />
-            <Limit name="measured-frame-rate-1920x1080" range="125-276" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.vpx.decoder" type="video/x-vnd.on2.vp8" update="true">
             <Limit name="measured-frame-rate-320x180" range="188-484" />
             <Limit name="measured-frame-rate-640x360" range="210-461" />
