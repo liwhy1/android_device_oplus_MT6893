@@ -41,10 +41,10 @@ cc_prebuilt_library_shared {
     },
     target: {
         android_arm: {
-            srcs: ["arm/libstagefright_foundation-v33.so"],
+            srcs: ["arm/libstagefright_foundation_v33.so"],
         },
         android_arm64: {
-            srcs: ["arm64/libstagefright_foundation-v33.so"],
+            srcs: ["arm64/libstagefright_foundation_v33.so"],
         },
     },
     compile_multilib: "both",
