@@ -493,7 +493,10 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-mediatekv2
+    android.hardware.usb-service.mediatek \
+    android.hardware.usb.gadget-service.mediatek
+
+$(call soong_config_set_bool,mediatek_gadget,use_custom_usb_gadget_rc,true)
 
 # Vibrator
 PRODUCT_PACKAGES += \

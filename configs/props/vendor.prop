@@ -312,6 +312,11 @@ ro.vendor.mtk_wfd_support=1
 ro.vendor.wfd.dummy.enable=0
 ro.vendor.wfd.iframesize.level=0
 
+# USB
+vendor.usb.controller=usb0
+vendor.usb.vid=0x22d9
+vendor.usb.pid=0x18d1
+
 # Wifi
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.gen=gen4m
