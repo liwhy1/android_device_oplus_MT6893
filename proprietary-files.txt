@@ -1168,7 +1168,7 @@ vendor/lib64/mt6893/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
 vendor/lib64/mt6893/libgpudataproducer.so;SYMLINK=vendor/lib64/libgpudataproducer.so
 vendor/lib64/mt6893/libmcv_runtime.mtk.so;SYMLINK=vendor/lib64/libmcv_runtime.mtk.so
 vendor/lib64/mt6893/libmdla_ut.so;SYMLINK=vendor/lib64/libmdla_ut.so
-vendor/lib64/mt6893/libmnl.so;SYMLINK=vendor/lib64/libmnl.so;DISABLE_DEPS
+vendor/lib64/mt6893/libmnl.so:vendor/lib64/libmnl-v30.so;FIX_SONAME
 vendor/lib64/mt6893/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 vendor/lib64/mt6893/libnir_neon_driver.so;SYMLINK=vendor/lib64/libnir_neon_driver.so
 vendor/lib64/mt6893/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
