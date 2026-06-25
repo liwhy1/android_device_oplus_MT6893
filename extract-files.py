@@ -20,7 +20,8 @@ from extract_utils.fixups_lib import (
 namespace_imports = [
     'device/oplus/op6893',
     'hardware/google/interfaces',
-    'hardware/google/pixel',
+    'hardware/google/pixel/pixelstats',
+    'hardware/google/pixel/power-libperfmgr',
     'hardware/mediatek',
     'hardware/mediatek/libaedv',
     'hardware/mediatek/libmtkperf_client',
