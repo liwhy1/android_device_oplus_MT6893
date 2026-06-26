@@ -20,7 +20,6 @@ oplus.camera.packname=com.oplus.camera
 # Dalvik
 dalvik.vm.ps-min-first-save-ms=150000
 dalvik.vm.image-dex2oat-Xms=64m
-dalvik.vm.image-dex2oat-Xmx=64m
 dalvik.vm.dex2oat-Xms=64m
 dalvik.vm.dex2oat-Xmx=512m
 dalvik.vm.usejit=true
