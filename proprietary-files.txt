@@ -1138,7 +1138,7 @@ vendor/lib/libFrameRecord.so
 vendor/lib/libNoFpsActor.so
 vendor/lib/libappgamepq.so
 vendor/lib/libdre.so
-vendor/lib/libformatter.so
+vendor/lib/libformatter.so:vendor/lib/libformatter-v31.so;FIX_SONAME
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libgamehdr.so
 vendor/lib/libged.so
@@ -1549,7 +1549,7 @@ vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libacdk.so
 vendor/lib64/libfft_vendor.so
-vendor/lib64/libformatter.so
+vendor/lib64/libformatter.so:vendor/lib64/libformatter-v31.so;FIX_SONAME
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libheichal.so
 vendor/lib64/libhevce_sb.ca7.android.so
