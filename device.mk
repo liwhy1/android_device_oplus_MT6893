@@ -397,7 +397,8 @@ PRODUCT_PACKAGES += \
 # libshims
 PRODUCT_PACKAGES += \
     libjni_shim \
-    libsensors_shim
+    libsensors_shim \
+    libaudioclient_shim
 
 PRODUCT_PACKAGES += \
     libshim_ui \
