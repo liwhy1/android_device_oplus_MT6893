@@ -173,6 +173,9 @@ PRODUCT_PACKAGES += \
    android.hardware.health@2.1-service \
    android.hardware.health@2.1-impl
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_op6893)
 
